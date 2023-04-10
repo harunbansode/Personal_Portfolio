@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block portfolio %}
+
+<br>
+<br>
+
+<section id="portfolio">
+
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        {% for i in data %}
+        <div class="card text-center mb-3">
+            <div class="card-header">
+              {{i.id}}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{i.title}}</h5>
+              <p class="card-text">{{i.description}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              {{i.year}}
+            </div>
+          </div>
+          {% endfor %}
+        <br>
+</section>
+
+{% endblock portfolio %}
+

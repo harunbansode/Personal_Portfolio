@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block about %}
+
+<!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src= '/static/img/man.svg' class= "imageAboutPage" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <p>Frontend developer and freelancer, Photochromic Lens enthusiast, practicing minimalist, and Pop Music & Jazz lover in search of flow. </p>  
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Raja Ram Mohan</li>
+                                <li>Age: 24</li>
+                                <li>Occupation: Web Developer</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p>
+                            Working with my hands to make magic happen on the internet. View my Projects, Articles, <a class='resume' download='' href='/static/pdf/harun-Bansode_Resume.pdf'>Resumé</a>, <a class='contact-b1' href="{% url 'contact' %}">Contact me</a>, or send me an email at rajaram1329@gmail.com.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-sm text-center">
+                            <h4>Frontend Technologies:</h4>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Adobe XD</p>
+                          </div>
+                            <div class="col-sm text-center">
+                                <h4>Programming Lang:</h4>
+                                <p>Python</p>
+                                <p>Java</p>
+                                <p>JavaScript</p>
+                                <p>SQL</p>
+                            </div>
+                              <div class="col-sm text-center">
+                                <h4>Framework:</h4>
+                                <p>Bootstrap</p>
+                                <p>TailwindCSS</p>
+                                <p>React</p>
+                                <p>Angular</p>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+
+{% endblock about %}
+
